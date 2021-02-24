@@ -1,27 +1,96 @@
 <!DOCTYPE html>
 <html lang = "en-gb">
 
+<!-- Title of Tab-->
 <head>
     <meta charset="UTF-8">
     <title>Comparisons</title>
 
-<!-- Title and navigation bar goes here-->
-<body>
-    <!-- text and pictures-->
-    <div class = "row">
-    <h1> Latitude</h1>
-    <div class  = "col-md-4">
-            <h1> Comparison: Latitude vs X </h1>
-            Click any plot to get an in depth analysis.
-            <h2>vs. Max Temperature</h2>
-            <img src= '../visualizations/LatMaxt.png' style="width:400px;height:400px;">
-            <h2>vs. Humidity</h2>
-            <img src= '../visualizations/LatHumid.png' style="width:400px;height:400px;">
-            <h2>vs. Cloudiness</h2>
-            <img src= '../visualizations/LatCloud.png'  style="width:400px;height:400px;">
-            <h2>vs. Wind Speed</h2>
-            <img src= '../visualizations/LatWind.png'  style="width:400px;height:400px;">
+<!-- CSS styling -->
+<link rel= "stylesheet" type = "text/css" href= "style.css">
 
-        </div>
+</head>
+<!-- Content -->
+<body>
+
+
+<header>
+
+<div class = "Container">
+<h1 class = "title"> Latitude </h1> 
+    <!-- Nav Bar-->
+<nav>
+    <ul>
+        <li>
+            <a href="Landing_Page.html" target=”_blank”>Landing Page</a>
+        </li>
+        
+        <li><a href= "#">Plots</a>
+            <ul>    
+                <li><a href= "LatMaxt_Visual.html"target=”_blank”>Max Temperature</a></li>
+                <li><a href= "LatHumid_Visual.html" target=”_blank”>Humidity</a></li>
+                <li><a href= "LatCloud_Visual.html" target=”_blank”>Cloudiness</a></li>
+                <li><a href= "LatWind_Visual.html" target=”_blank”>Wind Speed</a></li>
+            </ul>
+        </li>
+
+        <li>
+        <a href="Comparisons.html" target=”_blank”>Comparisons</a>
+        </li>
+        
+        <li>
+        <a href="Data.html" target=”_blank”>Data</a>
+        </li>
+    
+    </ul>
+</nav>
+
+</div>
+</div>
+</header>
+    <!-- Content -->
+  
+    <div class="background">
+        <div class = content>
+            
+            <text class = Text-center>
+             <!-- Title-->   
+                <b><h2> Comparison: Latitude vs X </h2></b>
+                <p>Click any plot to get an in depth analysis.</p>
+            
+            </text>
+            <!-- Figures-->
+        <a href = "LatMaxt_Visual.html" target=”_blank”>
+            <figure class = "Temp">
+                <h3>vs. Max Temperature</h3>
+                <img src= '../visualizations/LatMaxt.png' class="rounded float-left  thumbnail" style="width:425px;height:275px;">
+            </figure>
+        </a>
+            
+        <a href = "LatHumid_Visual.html" target=”_blank”>
+                <figure class = "Humid">
+                    <h3>vs. Humidity</h3>
+                    <img src= '../visualizations/LatHumid.png' class = "rounded float right thumbnail" style= "width:425px;height:275px;">
+                </figure>
+        </a>
+        <a href = "LatCloud_Visual.html" target=”_blank”>
+            <figure class = "Cloud">
+                <h3>vs. Cloudiness</h3>
+                <img src= '../visualizations/LatCloud.png'  class="rounded float-left  thumbnail" style="width:425px;height:275px;">
+              </figure>
+        </a>
+            
+        <a href = "LatWind_Visual.html" target=”_blank”>
+            <figure class = "Wind">
+                <h3>vs. Wind Speed</h3>
+                <img src= '../visualizations/LatWind.png'  class = "rounded float right thumbnail" style="width:425px;height:275px;">
+            </figure>
+        </a>
+            </div>
+        </div>  
     </div>
 </body>
+
+</html>
+
+

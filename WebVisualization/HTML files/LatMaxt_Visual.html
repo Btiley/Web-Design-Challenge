@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang = "en-gb">
 
-<head>
+    <head>
     <meta charset="UTF-8">
     <title>Max Temperature</title>
+    <link rel= "stylesheet" type = "text/css" href= "style.css">
 
-<!-- Title and navigation bar goes-->
-<body>
-    <!-- text and pictures-->
-    <div class = "row">
-    <h1> Latitude</h1>
-        <div class = "col-md-8">
-            <h1> Latitude vs Max Temperature</h1>
-            <img src= '../visualizations/LatMaxt.png' style="width:650px;height:400px;">
-            <p>
+    <!-- Title and navigation bar goes-->
+    <body>
+     <header>
+
+            <div class = "Container">
+            <h1 class = "title"> Latitude </h1> 
+            <!-- Nav Bar-->
+            <nav>
+                <ul>
+                    <li>
+                    <a href="Landing_Page.html" target=”_blank”>Landing Page</a>
+                    </li>
+                    <!-- Tried to create drop down but it wouldn't appear properly, all links work however-->
+                    <li><a href= "#">Plots</a>
+                    <ul>    
+                        <li><a href= "LatMaxt_Visual.html"target=”_blank”>Max Temperature</a></li>
+                        <li><a href= "LatHumid_Visual.html" target=”_blank”>Humidity</a></li>
+                        <li><a href= "LatCloud_Visual.html" target=”_blank”>Cloudiness</a></li>
+                        <li><a href= "LatWind_Visual.html" target=”_blank”>Wind Speed</a></li>
+                    </ul>
+                    </li>
+        
+                    <li>
+                    <a href="Comparisons.html" target=”_blank”>Comparisons</a>
+                    </li>
+                
+                    <li>
+                    <a href="Data.html" target=”_blank”>Data</a>
+                    </li>
+            
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+        <div class = "Content-Backing">
+        <div class = "Landing-text">
+        
+            <b><h2 class = "Landing-Title"> Summary: Latitude vs. X</h2</b>
+            <figure> 
+            <img src= "../visualizations/LatMaxt.png" style="width:650px;height:400px;">
+            </figure>
+
+            <p class = "Landing-p">
                 As expected, the weather became significantly warmer as one approaches the equation (0 Deg.
-                <br>
+                
                 Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be 
-                <br>
+                
                 warmer this time of year then the northern hemisphere. This may be due to the tilt of the earth at
-                <br>
+                
                 the time of the year this data was gathered.
             </p>
         </div>
-        <div class  = "col-md-4">
-            <h1> Visualizations </h1>
-            <img src= '../visualizations/LatCloud.png' style="width:128px;height:128px;">
-            <img src= '../visualizations/LatHumid.png' style="width:128px;height:128px;">
-            <img src= '../visualizations/LatMaxt.png'  style="width:128px;height:128px;">
-            <img src= '../visualizations/LatWind.png'  style="width:128px;height:128px;">
+        
+        <div class = Landing-comps>
+            <h2> Visualizations </h2>
+            <figure class = "comp-Temp"></figure>
+            <img src= '../visualizations/LatMaxt.png' style="width:150px;height:150px;">
+        
+            <figure class = "comp-Humid"></figure>
+            <img src= '../visualizations/LatHumid.png' style="width:150px;height:150px;">
+        
+            <figure class = "comp-Cloud"></figure>
+            <img src= '../visualizations/LatCloud.png'  style="width:150px;height:150px;">
 
+            <figure class = "comp-Wind"></figure>
+            <img src= '../visualizations/LatWind.png'  style="width:150px;height:150px;">
         </div>
-    </div>
-</body>
+        </div>
+
+
+    </body>
 
 </html>
-
-
+    
+        

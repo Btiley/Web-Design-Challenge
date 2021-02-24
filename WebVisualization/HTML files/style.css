@@ -1,0 +1,200 @@
+
+    /* Nav Bar/ Latitude header customisation */
+    .header{
+        background-color: rgb(110, 148, 148);
+    }
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+
+    }
+    h1 {
+        color:white;
+        background-color: rgb(21, 128, 128);
+        font-size:20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+         }
+    .title{
+        float:left;
+        margin-left: 25px;
+        padding:10px;
+    }
+    nav{
+        float:right
+    }
+
+
+    nav ul {
+        margin: 0;
+        padding 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right:70px;
+        margin-top: 25px;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: small;
+    }
+
+    nav a:hover {
+        color:black;
+    }
+/* Customise Plots dropdown */
+
+nav ul li {
+    list-style:none;
+    position: relative;
+    float:left;
+    left: 50px
+
+}
+
+/*Landing Page customise */
+.Content-Backing{
+    position: relative;
+    height: 850px;
+    width: 1500px;
+    background: lightgrey;
+    right: -200px;
+    bottom: 0px
+    
+  }
+
+.Landing-text {
+    position: relative;
+    height: 750px;
+    width: 750px;
+    background: white;
+    right: -250px;
+    top: 50px;
+    float:left;
+}
+
+.Landing-comps{
+    position: absolute;
+    height: 400px;
+    width: 375px;
+    background: white;
+    right: 100px;
+    top: 50px;
+    float:right;
+}  
+
+.Landing-Title {
+    padding: 50px
+}
+.Landing-p {
+    padding: 50px;
+    font-size: 15px;
+    color:black;
+    position:relative;
+}
+
+/* Visuals customise */
+.comp-Temp{
+   position:absolute;
+    
+
+}
+.comp-Humid{
+    
+    position:absolute;
+   
+ 
+    
+}
+.comp-Cloud{
+    position: absolute;
+   
+
+}
+.comp-Wind{
+    
+    position: absolute;
+    
+}
+
+/* Comparisons customise
+
+    /* Customising main Content background colours */
+    .background {
+        position: relative;
+        height: 850px;
+        width: 1500px;
+        background: lightgrey;
+        right: -200px;
+        bottom: 0px
+        
+      }
+
+    .content {
+        position: relative;
+        height: 725px;
+        width: 1000px;
+        background: white;
+        right: -250px;
+        top: 50px;
+    }
+    /* Customising size and positioning of graphs */
+    h2 {
+        color:rgb(22, 151, 151);
+        font-size:22px
+    }
+    
+    h3 { 
+        color:rgb(22, 151, 151);
+        font-size: 18px
+    }
+    .Text-center {
+        position:absolute;
+        margin-left:100px;
+    }
+
+    p{
+        font-size: small;
+        text-decoration:none;
+        font-weight:lighter
+    }
+    
+    .Temp {
+        position: absolute;
+        top: 50px;
+        right: 500px;
+    }
+
+    .Humid {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+
+    .Cloud{
+        position:absolute;
+        top: 350px;
+        right: 500px;
+    }
+      
+    .Wind{
+        position:absolute;
+        top: 350px;
+        right: 0px;
+    }
+
+.dataframe{
+    float:left;
+    margin-top:100px;
+    margin-left:100px;
+}
+
+
+}

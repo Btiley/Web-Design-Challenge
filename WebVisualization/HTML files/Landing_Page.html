@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang = "en-gb">
 
-<head>
+    <head>
     <meta charset="UTF-8">
     <title>Landing Page</title>
+    <link rel= "stylesheet" type = "text/css" href= "style.css">
 
-<!-- Title and navigation bar goes-->
-<body>
-    <!-- text and pictures-->
-    <div class = "row">
-    <h1> Latitude</h1>
-        <div class = "col-md-8">
-            <h1> Summary: Latitude vs. X</h1>
-            <img src= '../visualizations/LatMaxt.png' style="width:150px;height:150px;">
-            <p>
+    <!-- CSS Styles -->
+    </head>
+    <body>
+
+        <header>
+
+            <div class = "Container">
+                <h1 class = "title"> Latitude </h1> 
+            <!-- Nav Bar-->
+                <nav>
+                    <ul>
+                        <li>
+                        <a href="Landing_Page.html" target=”_blank”>Landing Page</a>
+                        </li>
+                        <!-- Tried to create drop down but it wouldn't appear properly, all links work however-->
+                        <li><a href= "#">Plots</a>
+                        <ul>    
+                            <li><a href= "LatMaxt_Visual.html"target=”_blank”>Max Temperature</a></li>
+                            <li><a href= "LatHumid_Visual.html" target=”_blank”>Humidity</a></li>
+                            <li><a href= "LatCloud_Visual.html" target=”_blank”>Cloudiness</a></li>
+                            <li><a href= "LatWind_Visual.html" target=”_blank”>Wind Speed</a></li>
+                        </ul>
+                        </li>
+            
+                        <li>
+                        <a href="Comparisons.html" target=”_blank”>Comparisons</a>
+                        </li>
+                    
+                        <li>
+                        <a href="Data.html" target=”_blank”>Data</a>
+                        </li>
+                
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class = "Content-Backing">
+            <div class = "Landing-text">
+            
+                <b><h2 class = "Landing-Title"> Summary: Latitude vs. X</h2</b>
+                <figure> 
+                <img src= '../visualizations/LatMaxt.png' style="width:500px;height:350px;">
+                </figure>
+
+                <p class = "Landing-p">
                 The purpose of this project was to analyse how weather changes 
                 <br>
                 as you get closer to the equator. To accomplish this analysis, we 
@@ -21,32 +59,36 @@
                 first pulled data from the OpenWeatherMap API to assemble a 
                 <br>
                 data set on over 500 cities. 
-            </p>
-            <p>   
+                <br>
+                <br>  
                 After assembling the dataset, we used Matplotlib to plot various 
                 <br>
                 aspects of the weather vs. latitude. Factors we looked at included: 
                 <br>
                 temperature, cloudiness, wind speed, and humidity. This site provides the source data and 
-                <br>
-                visualizations created as part of the analysis, 
-                as well as explanations and descriptions of any
-                <br> 
+                visualizations created as part of the analysis, as well as explanations and descriptions of any
                 trends and correlations witnessed. 
-            </p>
+                </p>
+            </div>
+            
+            <div class = Landing-comps>
+                <h2> Visualizations </h2>
+                <figure class = "comp-Temp"></figure>
+                <img src= '../visualizations/LatMaxt.png' style="width:150px;height:150px;">
+            
+                <figure class = "comp-Humid"></figure>
+                <img src= '../visualizations/LatHumid.png' style="width:150px;height:150px;">
+            
+                <figure class = "comp-Cloud"></figure>
+                <img src= '../visualizations/LatCloud.png'  style="width:150px;height:150px;">
 
+                <figure class = "comp-Wind"></figure>
+                <img src= '../visualizations/LatWind.png'  style="width:150px;height:150px;">
+            </div>
         </div>
-        <div class  = "col-md-4">
-            <h1> Visualizations </h1>
-            <img src= '../visualizations/LatCloud.png' style="width:128px;height:128px;">
-            <img src= '../visualizations/LatHumid.png' style="width:128px;height:128px;">
-            <img src= '../visualizations/LatMaxt.png'  style="width:128px;height:128px;">
-            <img src= '../visualizations/LatWind.png'  style="width:128px;height:128px;">
 
-        </div>
-    </div>
-</body>
+            
+            
+    </body>
 
 </html>
-
-
